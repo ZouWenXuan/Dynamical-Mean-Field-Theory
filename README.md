@@ -2,7 +2,7 @@
 
 Numerical solution for dynamical mean-field equation of generic random neural networks. The dynamics of original system reads,
 $$
-\dot{x}_i(t)=-x_i(t)+g \sum_{j=1} J_{i j} \phi_j(t) + j_i(t) +\sigma \xi_i(t), \quad i=1, \ldots, N,
+\dot{x}_i(t)=-x_i(t)+g \sum_{j=1} J_{i j} \phi_j(t) + j_i(t) +\sigma \xi_i(t),
 $$
 where the Gaussian noise $\xi_i(t)$ has the variance $\left\langle \xi_i(t)\xi_j(t^{\prime})\right\rangle =\delta_{ij}\delta(t-t^{\prime})$. Connections $J_{ij}$ are drawn from the centered Gaussian distribution with the variance $\frac{1}{N}$ as well as the covariance $\overline{J_{ij} J_{ji}}  = \frac{\eta}{N}$.  The mean-field dynamics reads,
 $$\dot{x}(t) = -x(t) + \gamma(t) +  g^2 \eta  \int_{0}^{t} R(t,s)\phi(s)    \mathrm {d}s,$$
